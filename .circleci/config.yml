@@ -15,4 +15,6 @@ jobs:
 workflows:
   deploy:
     jobs:
-      - deploy
+      - deploy:
+        context:
+          - AWS_DEPLOY_CREDENTIAL
